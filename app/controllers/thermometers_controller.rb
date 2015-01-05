@@ -39,7 +39,7 @@ class ThermometersController < ApplicationController
   # GET /thermometers
   # GET /thermometers.json
   def index
-    @thermometer = Thermometer.order('created_at desc')
+    @thermometer = current_user.thermometers.order('created_at desc')
      if current_user.admin == true
       @user_type = "Admin"
       current_user.add_role "admin"
@@ -68,11 +68,13 @@ class ThermometersController < ApplicationController
   # POST /thermometers
   # POST /thermometers.json
   def create
-    @thermometer = Thermometer.new(thermometer_params)
+		puts "*"*50
+		puts params
+    @thermometer = current_user.thermometers.new(thermometer_params)
 
     respond_to do |format|
       if @thermometer.save
-        # ThermometerMailer.thermo_confirmation(@user).deliver_now
+				@thermometer.mail_deliver
         format.html { redirect_to @thermometer, notice: 'Thermometer was successfully created.' }
         format.json { render :show, status: :created, location: @thermometer }
       else

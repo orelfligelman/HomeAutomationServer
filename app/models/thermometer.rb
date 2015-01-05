@@ -1,5 +1,5 @@
 class Thermometer < ActiveRecord::Base
-	belongs_to :user, :polymorphic => :true
+	belongs_to :user
 	# validates_associated :user
 	# scope :broken (where ('thermometers_updated_at < 300'))
 	# self.inheritance_column = :temperature
@@ -9,7 +9,9 @@ class Thermometer < ActiveRecord::Base
 		false
 	end
 
-
+	def mail_deliver
+		ThermometerMailer.thermo_confirmation(self).deliver
+	end
 
 	def self.import(file)
   spreadsheet = open_spreadsheet(file)
