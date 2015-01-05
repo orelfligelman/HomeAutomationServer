@@ -1,0 +1,10 @@
+<h1>Welcome to <%= current_user.email %>'s view</h1>
+
+<p><h4>Your Gravatar Image - </h4></p>
+<p align="left"><%= image_tag current_user.gravatar_url %></p>
+
+
+
+<%= link_to 'New Thermometer', new_thermometer_path %>
+
+<h2> Import Thermometer Data

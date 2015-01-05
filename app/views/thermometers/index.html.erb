@@ -1,0 +1,31 @@
+<h1>Listing thermometers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Temperature</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+</div>
+  <tbody>
+    <% @thermometer.each do |thermometer| %>
+      <tr>
+        <td><%= thermometer.name %></td>
+        <td><%= thermometer.temperature %></td>
+        <td><%= link_to 'Show', thermometer %></td>
+        <td><%= link_to 'Edit', edit_thermometer_path(thermometer) %></td>
+        <td><%= link_to 'Destroy', thermometer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Thermometer', new_thermometer_path %>
+
+<h2> Import Thermometer Data
+

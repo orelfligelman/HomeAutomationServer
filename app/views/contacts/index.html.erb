@@ -1,0 +1,46 @@
+<h1>Contacts</h1><br>
+<h2><%= current_user.email %> - <%= @user_type %>
+</h2>
+<table cellspacing="12" cellpadding="5" bgcolor="#F5F5DC">
+  <thead align="center">
+    <tr >
+      <th>Name</th>
+      <th>Mobile no</th>
+      <th>Department</th>
+      <th>Address</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody align="center">
+    <% @contacts.each do |contact| %>
+      <tr>
+        <td><%= contact.name %></td>
+        <td><%= contact.mobile_no %></td>
+        <td><%= contact.department %></td>
+      </tr>
+      <tr>
+        <td colspan="2" bgcolor="#DEB887"><%= link_to 'Show', contact %></td>
+        <td colspan="2" bgcolor="#DEB887">
+          <% if can? :update, contact %>
+            <%= link_to 'Edit', edit_contact_path(contact) %>
+          <% end %>
+        </td>
+        <td colspan="1" bgcolor="#DEB887">
+          <% if can? :destroy, contact %>
+            <%= link_to 'Destroy', contact, method: :delete, data: { confirm: 'Are you sure?' } %>
+          <% end %>
+        </td>
+      </tr>
+      <tr><td colspan="5">________________________________________________________________</td></tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<% if can? :manage, :all, @contacts %>
+  <%= link_to 'New Contact', new_contact_path %>
+<% end %>
