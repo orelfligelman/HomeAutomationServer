@@ -3,13 +3,10 @@ class Thermometer < ActiveRecord::Base
 	# validates_associated :user
 	# scope :broken (where ('thermometers_updated_at < 300'))
 	# self.inheritance_column = :temperature
-	before_destroy do
-		:email_update_destroy
-		self.update_attribute(:deleted_at, Time.current)
-		false
-	end
+
 
 	def mail_deliver
+		# @thermometer = Thermometer.find(params[:id])
 		ThermometerMailer.thermo_confirmation(self).deliver
 	end
 

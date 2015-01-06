@@ -5,7 +5,6 @@ class UserviewController < ApplicationController
 
 	def index
     @users = User.all
-    @thermometers = Thermometer.all
     # render partial: 'thermometers/form'
   end
 

@@ -1,5 +1,5 @@
 class ThermometersController < ApplicationController
-  # before_action :set_thermometer, only: [:show, :edit, :update, :destroy]
+  before_action :set_thermometer, only: [:show, :edit, :update, :destroy]
   before_filter :authenticate_user!
 
 
@@ -51,6 +51,7 @@ class ThermometersController < ApplicationController
   # GET /thermometers/1
   # GET /thermometers/1.json
   def show
+		@thermometer = Thermometer.find(params[:id])
   end
 
   # GET /thermometers/new
@@ -61,7 +62,7 @@ class ThermometersController < ApplicationController
 
   # GET /thermometers/1/edit
   def edit
-     @thermometer = Contact.find(params[:id])
+     @thermometer = Thermometer.find(params[:id])
     authorize! :edit, @thermometer
   end
 
@@ -102,7 +103,9 @@ class ThermometersController < ApplicationController
   # DELETE /thermometers/1.json
   def destroy
     @thermometer.destroy
-     UserMailer.email_update_destroy(@user).deliver
+		puts "*" *50
+		puts @thermometer
+     # UserMailer.email_update_destroy(@user).deliver
     respond_to do |format|
       format.html { redirect_to thermometers_url, notice: 'Thermometer was successfully destroyed.' }
       format.json { head :no_content }
@@ -117,7 +120,7 @@ class ThermometersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def thermometer_params
-      params.require(:thermometer).permit(:name, :temperature)
+      params.require(:thermometer).permit(:name, :temperature, :email, :max_temp)
     end
 end
 

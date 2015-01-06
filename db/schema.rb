@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150104231446) do
+ActiveRecord::Schema.define(version: 20150105211810) do
 
   create_table "activities", force: true do |t|
     t.integer  "trackable_id"
@@ -61,6 +61,7 @@ ActiveRecord::Schema.define(version: 20150104231446) do
     t.datetime "updated_at"
     t.integer  "user_id"
     t.string   "email"
+    t.float    "max_temp"
   end
 
   create_table "thermometers_users", id: false, force: true do |t|
