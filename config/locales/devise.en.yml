@@ -2,6 +2,9 @@
 
 en:
   devise:
+    admin_registrations:
+      admin:
+        signed_up: 'Welcome! You have signed up successfully.'
     confirmations:
       confirmed: "Your account was successfully confirmed."
       send_instructions: "You will receive an email with instructions about how to confirm your account in a few minutes."
@@ -23,7 +26,7 @@ en:
         subject: "Reset password instructions"
       unlock_instructions:
         subject: "Unlock Instructions"
-    omniauth_callbacks:
+    omniauth_callback:
       failure: "Could not authenticate you from %{kind} because \"%{reason}\"."
       success: "Successfully authenticated from %{kind} account."
     passwords:

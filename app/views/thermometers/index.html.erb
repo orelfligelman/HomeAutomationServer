@@ -1,3 +1,5 @@
+
+
 <h1>Listing thermometers</h1>
 
 <table>
@@ -9,19 +11,42 @@
     </tr>
   </thead>
 
+  <% if @thermometer.name %>
+      <% @thermometer.each do |thermometer| %>
+          <tr>
+            <td><%= thermometer.name %></td>
+            <td><%= link_to 'Show', thermometer %></td>
+            <td><%= link_to 'Edit', edit_thermometer_path(thermometer) %></td>
+            <td><%= link_to 'Destroy', thermometer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          </tr>
+      <% end %>
+      </tbody>
+      </table>
+      <tbody>
+  <!-- Button trigger modal -->
+  <button class="btn btn-link" data-toggle="modal" data-target="#todo-<%= @thermometer.name %>-notes">
+    View notes
+  </button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="todo-<%= @thermometer.name %>-notes" tabindex="-1" role="dialog" aria-labelledby="todo-<%= @thermometer.name %>-label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="todo-<%= @thermometer.name %>-label">Notes</h4>
+        </div>
+        <div class="modal-body">
+          <%= @thermometer.name %>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <% end %>
+
 </div>
-  <tbody>
-    <% @thermometer.each do |thermometer| %>
-      <tr>
-        <td><%= thermometer.name %></td>
-        <td><%= thermometer.temperature %></td>
-        <td><%= link_to 'Show', thermometer %></td>
-        <td><%= link_to 'Edit', edit_thermometer_path(thermometer) %></td>
-        <td><%= link_to 'Destroy', thermometer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
 
 <br>
 

@@ -1,0 +1,472 @@
+  [1m[36mActiveRecord::SchemaMigration Load (12.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Processing by WidgetsController#new as HTML
+Completed 500 Internal Server Error in 18ms
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (22.9ms)[0m  [1mSELECT COUNT(*) FROM "widgets"[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+Started GET "/widgets" for 127.0.0.1 at 2015-01-22 10:58:55 -0500
+Processing by WidgetsController#index as HTML
+Completed 401 Unauthorized in 71ms
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (6.8ms)[0m  [1mINSERT INTO "widgets" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2015-01-22 15:58:56.092262"], ["name", "MyString"], ["updated_at", "2015-01-22 15:58:56.092262"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  Rendered widgets/_form.html.erb (9.2ms)
+  [1m[36m (11.8ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "widgets" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2015-01-22 15:58:56.220678"], ["name", "Name"], ["updated_at", "2015-01-22 15:58:56.220678"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "widgets" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2015-01-22 15:58:56.221890"], ["name", "Name"], ["updated_at", "2015-01-22 15:58:56.221890"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.7ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  Rendered widgets/_form.html.erb (2.6ms)
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "widgets" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2015-01-22 15:58:56.264973"], ["name", "Name"], ["updated_at", "2015-01-22 15:58:56.264973"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (8.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Unable to load termsand_condition, underlying cause No such file to load -- termsand_condition 
+
+ /Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/activesupport-4.1.1/lib/active_support/dependencies.rb:247:in `require'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/activesupport-4.1.1/lib/active_support/dependencies.rb:247:in `block in require'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/activesupport-4.1.1/lib/active_support/dependencies.rb:232:in `load_dependency'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/activesupport-4.1.1/lib/active_support/dependencies.rb:247:in `require'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/activesupport-4.1.1/lib/active_support/dependencies.rb:348:in `require_or_load'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/activesupport-4.1.1/lib/active_support/dependencies.rb:307:in `depend_on'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/activesupport-4.1.1/lib/active_support/dependencies.rb:225:in `require_dependency'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/activerecord-4.1.1/lib/active_record/fixtures.rb:862:in `try_to_load_dependency'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/activerecord-4.1.1/lib/active_record/fixtures.rb:881:in `block in require_fixture_classes'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/activerecord-4.1.1/lib/active_record/fixtures.rb:879:in `each'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/activerecord-4.1.1/lib/active_record/fixtures.rb:879:in `require_fixture_classes'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/activerecord-4.1.1/lib/active_record/fixtures.rb:857:in `fixtures'
+/Users/adityanarayan/Desktop/RubymineProjects/Thermometer_Project/Home_Automation_Server/test/test_helper.rb:10:in `<class:TestCase>'
+/Users/adityanarayan/Desktop/RubymineProjects/Thermometer_Project/Home_Automation_Server/test/test_helper.rb:5:in `<top (required)>'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/activesupport-4.1.1/lib/active_support/dependencies.rb:247:in `require'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/activesupport-4.1.1/lib/active_support/dependencies.rb:247:in `block in require'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/activesupport-4.1.1/lib/active_support/dependencies.rb:232:in `load_dependency'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/activesupport-4.1.1/lib/active_support/dependencies.rb:247:in `require'
+/Users/adityanarayan/Desktop/RubymineProjects/Thermometer_Project/Home_Automation_Server/test/models/contact_test.rb:1:in `<top (required)>'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/activesupport-4.1.1/lib/active_support/dependencies.rb:247:in `require'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/activesupport-4.1.1/lib/active_support/dependencies.rb:247:in `block in require'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/activesupport-4.1.1/lib/active_support/dependencies.rb:232:in `load_dependency'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/activesupport-4.1.1/lib/active_support/dependencies.rb:247:in `require'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/railties-4.1.1/lib/rails/test_unit/sub_test_task.rb:114:in `block (3 levels) in define'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/railties-4.1.1/lib/rails/test_unit/sub_test_task.rb:114:in `each'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/railties-4.1.1/lib/rails/test_unit/sub_test_task.rb:114:in `block (2 levels) in define'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/railties-4.1.1/lib/rails/test_unit/sub_test_task.rb:113:in `each'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/railties-4.1.1/lib/rails/test_unit/sub_test_task.rb:113:in `block in define'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/rake-10.4.2/lib/rake/task.rb:240:in `call'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/rake-10.4.2/lib/rake/task.rb:240:in `block in execute'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/rake-10.4.2/lib/rake/task.rb:235:in `each'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/rake-10.4.2/lib/rake/task.rb:235:in `execute'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/rake-10.4.2/lib/rake/task.rb:179:in `block in invoke_with_call_chain'
+/Users/adityanarayan/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/monitor.rb:211:in `mon_synchronize'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/rake-10.4.2/lib/rake/task.rb:172:in `invoke_with_call_chain'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/rake-10.4.2/lib/rake/task.rb:165:in `invoke'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/rake-10.4.2/lib/rake/application.rb:150:in `invoke_task'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/rake-10.4.2/lib/rake/application.rb:106:in `block (2 levels) in top_level'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/rake-10.4.2/lib/rake/application.rb:106:in `each'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/rake-10.4.2/lib/rake/application.rb:106:in `block in top_level'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/rake-10.4.2/lib/rake/application.rb:115:in `run_with_threads'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/rake-10.4.2/lib/rake/application.rb:100:in `top_level'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/rake-10.4.2/lib/rake/application.rb:78:in `block in run'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/rake-10.4.2/lib/rake/application.rb:176:in `standard_exception_handling'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/rake-10.4.2/lib/rake/application.rb:75:in `run'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/rake-10.4.2/bin/rake:33:in `<top (required)>'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/bin/rake:23:in `load'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/bin/rake:23:in `<main>'
+  [1m[36mActiveRecord::SchemaMigration Load (8.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Unable to load termsand_condition, underlying cause No such file to load -- termsand_condition 
+
+ /Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/activesupport-4.1.1/lib/active_support/dependencies.rb:247:in `require'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/activesupport-4.1.1/lib/active_support/dependencies.rb:247:in `block in require'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/activesupport-4.1.1/lib/active_support/dependencies.rb:232:in `load_dependency'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/activesupport-4.1.1/lib/active_support/dependencies.rb:247:in `require'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/activesupport-4.1.1/lib/active_support/dependencies.rb:348:in `require_or_load'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/activesupport-4.1.1/lib/active_support/dependencies.rb:307:in `depend_on'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/activesupport-4.1.1/lib/active_support/dependencies.rb:225:in `require_dependency'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/activerecord-4.1.1/lib/active_record/fixtures.rb:862:in `try_to_load_dependency'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/activerecord-4.1.1/lib/active_record/fixtures.rb:881:in `block in require_fixture_classes'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/activerecord-4.1.1/lib/active_record/fixtures.rb:879:in `each'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/activerecord-4.1.1/lib/active_record/fixtures.rb:879:in `require_fixture_classes'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/activerecord-4.1.1/lib/active_record/fixtures.rb:857:in `fixtures'
+/Users/adityanarayan/Desktop/RubymineProjects/Thermometer_Project/Home_Automation_Server/test/test_helper.rb:10:in `<class:TestCase>'
+/Users/adityanarayan/Desktop/RubymineProjects/Thermometer_Project/Home_Automation_Server/test/test_helper.rb:5:in `<top (required)>'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/activesupport-4.1.1/lib/active_support/dependencies.rb:247:in `require'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/activesupport-4.1.1/lib/active_support/dependencies.rb:247:in `block in require'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/activesupport-4.1.1/lib/active_support/dependencies.rb:232:in `load_dependency'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/activesupport-4.1.1/lib/active_support/dependencies.rb:247:in `require'
+/Users/adityanarayan/Desktop/RubymineProjects/Thermometer_Project/Home_Automation_Server/test/models/contact_test.rb:1:in `<top (required)>'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/activesupport-4.1.1/lib/active_support/dependencies.rb:247:in `require'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/activesupport-4.1.1/lib/active_support/dependencies.rb:247:in `block in require'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/activesupport-4.1.1/lib/active_support/dependencies.rb:232:in `load_dependency'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/activesupport-4.1.1/lib/active_support/dependencies.rb:247:in `require'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/railties-4.1.1/lib/rails/test_unit/sub_test_task.rb:114:in `block (3 levels) in define'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/railties-4.1.1/lib/rails/test_unit/sub_test_task.rb:114:in `each'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/railties-4.1.1/lib/rails/test_unit/sub_test_task.rb:114:in `block (2 levels) in define'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/railties-4.1.1/lib/rails/test_unit/sub_test_task.rb:113:in `each'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/railties-4.1.1/lib/rails/test_unit/sub_test_task.rb:113:in `block in define'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/rake-10.4.2/lib/rake/task.rb:240:in `call'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/rake-10.4.2/lib/rake/task.rb:240:in `block in execute'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/rake-10.4.2/lib/rake/task.rb:235:in `each'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/rake-10.4.2/lib/rake/task.rb:235:in `execute'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/rake-10.4.2/lib/rake/task.rb:179:in `block in invoke_with_call_chain'
+/Users/adityanarayan/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/monitor.rb:211:in `mon_synchronize'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/rake-10.4.2/lib/rake/task.rb:172:in `invoke_with_call_chain'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/rake-10.4.2/lib/rake/task.rb:165:in `invoke'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/rake-10.4.2/lib/rake/application.rb:150:in `invoke_task'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/rake-10.4.2/lib/rake/application.rb:106:in `block (2 levels) in top_level'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/rake-10.4.2/lib/rake/application.rb:106:in `each'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/rake-10.4.2/lib/rake/application.rb:106:in `block in top_level'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/rake-10.4.2/lib/rake/application.rb:115:in `run_with_threads'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/rake-10.4.2/lib/rake/application.rb:100:in `top_level'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/rake-10.4.2/lib/rake/application.rb:78:in `block in run'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/rake-10.4.2/lib/rake/application.rb:176:in `standard_exception_handling'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/rake-10.4.2/lib/rake/application.rb:75:in `run'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/rake-10.4.2/bin/rake:33:in `<top (required)>'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/bin/rake:23:in `load'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/bin/rake:23:in `<main>'
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mFixture Delete (5.9ms)[0m  [1mDELETE FROM "contacts"[0m
+  [1m[35mFixture Insert (10.0ms)[0m  INSERT INTO "contacts" ("name", "mobile_no", "department", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', '2015-01-22 23:37:35', '2015-01-22 23:37:35', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "contacts" ("name", "mobile_no", "department", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', '2015-01-22 23:37:35', '2015-01-22 23:37:35', 298486374)[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "readings"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "readings" ("name", "created_at", "updated_at", "id") VALUES ('Thermometer', '2015-01-22 23:37:35', '2015-01-22 23:37:35', 905192165)[0m
+SQLite3::SQLException: table readings has no column named name: INSERT INTO "readings" ("name", "created_at", "updated_at", "id") VALUES ('Thermometer', '2015-01-22 23:37:35', '2015-01-22 23:37:35', 905192165)
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "contacts"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "contacts" ("name", "mobile_no", "department", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', '2015-01-22 23:37:35', '2015-01-22 23:37:35', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "contacts" ("name", "mobile_no", "department", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', '2015-01-22 23:37:35', '2015-01-22 23:37:35', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "readings"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "readings" ("name", "created_at", "updated_at", "id") VALUES ('Thermometer', '2015-01-22 23:37:35', '2015-01-22 23:37:35', 905192165)
+SQLite3::SQLException: table readings has no column named name: INSERT INTO "readings" ("name", "created_at", "updated_at", "id") VALUES ('Thermometer', '2015-01-22 23:37:35', '2015-01-22 23:37:35', 905192165)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "contacts"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "contacts" ("name", "mobile_no", "department", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', '2015-01-22 23:37:35', '2015-01-22 23:37:35', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "contacts" ("name", "mobile_no", "department", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', '2015-01-22 23:37:35', '2015-01-22 23:37:35', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "readings"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "readings" ("name", "created_at", "updated_at", "id") VALUES ('Thermometer', '2015-01-22 23:37:35', '2015-01-22 23:37:35', 905192165)[0m
+SQLite3::SQLException: table readings has no column named name: INSERT INTO "readings" ("name", "created_at", "updated_at", "id") VALUES ('Thermometer', '2015-01-22 23:37:35', '2015-01-22 23:37:35', 905192165)
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "contacts"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "contacts" ("name", "mobile_no", "department", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', '2015-01-22 23:37:35', '2015-01-22 23:37:35', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "contacts" ("name", "mobile_no", "department", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', '2015-01-22 23:37:35', '2015-01-22 23:37:35', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "readings"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "readings" ("name", "created_at", "updated_at", "id") VALUES ('Thermometer', '2015-01-22 23:37:35', '2015-01-22 23:37:35', 905192165)
+SQLite3::SQLException: table readings has no column named name: INSERT INTO "readings" ("name", "created_at", "updated_at", "id") VALUES ('Thermometer', '2015-01-22 23:37:35', '2015-01-22 23:37:35', 905192165)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (8.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Unable to load termsand_condition, underlying cause No such file to load -- termsand_condition 
+
+ /Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/activesupport-4.1.1/lib/active_support/dependencies.rb:247:in `require'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/activesupport-4.1.1/lib/active_support/dependencies.rb:247:in `block in require'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/activesupport-4.1.1/lib/active_support/dependencies.rb:232:in `load_dependency'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/activesupport-4.1.1/lib/active_support/dependencies.rb:247:in `require'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/activesupport-4.1.1/lib/active_support/dependencies.rb:348:in `require_or_load'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/activesupport-4.1.1/lib/active_support/dependencies.rb:307:in `depend_on'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/activesupport-4.1.1/lib/active_support/dependencies.rb:225:in `require_dependency'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/activerecord-4.1.1/lib/active_record/fixtures.rb:862:in `try_to_load_dependency'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/activerecord-4.1.1/lib/active_record/fixtures.rb:881:in `block in require_fixture_classes'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/activerecord-4.1.1/lib/active_record/fixtures.rb:879:in `each'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/activerecord-4.1.1/lib/active_record/fixtures.rb:879:in `require_fixture_classes'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/activerecord-4.1.1/lib/active_record/fixtures.rb:857:in `fixtures'
+/Users/adityanarayan/Desktop/RubymineProjects/Thermometer_Project/Home_Automation_Server/test/test_helper.rb:10:in `<class:TestCase>'
+/Users/adityanarayan/Desktop/RubymineProjects/Thermometer_Project/Home_Automation_Server/test/test_helper.rb:5:in `<top (required)>'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/activesupport-4.1.1/lib/active_support/dependencies.rb:247:in `require'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/activesupport-4.1.1/lib/active_support/dependencies.rb:247:in `block in require'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/activesupport-4.1.1/lib/active_support/dependencies.rb:232:in `load_dependency'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/activesupport-4.1.1/lib/active_support/dependencies.rb:247:in `require'
+/Users/adityanarayan/Desktop/RubymineProjects/Thermometer_Project/Home_Automation_Server/test/models/contact_test.rb:1:in `<top (required)>'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/activesupport-4.1.1/lib/active_support/dependencies.rb:247:in `require'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/activesupport-4.1.1/lib/active_support/dependencies.rb:247:in `block in require'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/activesupport-4.1.1/lib/active_support/dependencies.rb:232:in `load_dependency'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/activesupport-4.1.1/lib/active_support/dependencies.rb:247:in `require'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/railties-4.1.1/lib/rails/test_unit/sub_test_task.rb:114:in `block (3 levels) in define'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/railties-4.1.1/lib/rails/test_unit/sub_test_task.rb:114:in `each'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/railties-4.1.1/lib/rails/test_unit/sub_test_task.rb:114:in `block (2 levels) in define'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/railties-4.1.1/lib/rails/test_unit/sub_test_task.rb:113:in `each'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/railties-4.1.1/lib/rails/test_unit/sub_test_task.rb:113:in `block in define'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/rake-10.4.2/lib/rake/task.rb:240:in `call'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/rake-10.4.2/lib/rake/task.rb:240:in `block in execute'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/rake-10.4.2/lib/rake/task.rb:235:in `each'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/rake-10.4.2/lib/rake/task.rb:235:in `execute'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/rake-10.4.2/lib/rake/task.rb:179:in `block in invoke_with_call_chain'
+/Users/adityanarayan/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/monitor.rb:211:in `mon_synchronize'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/rake-10.4.2/lib/rake/task.rb:172:in `invoke_with_call_chain'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/rake-10.4.2/lib/rake/task.rb:165:in `invoke'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/rake-10.4.2/lib/rake/application.rb:150:in `invoke_task'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/rake-10.4.2/lib/rake/application.rb:106:in `block (2 levels) in top_level'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/rake-10.4.2/lib/rake/application.rb:106:in `each'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/rake-10.4.2/lib/rake/application.rb:106:in `block in top_level'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/rake-10.4.2/lib/rake/application.rb:115:in `run_with_threads'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/rake-10.4.2/lib/rake/application.rb:100:in `top_level'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/rake-10.4.2/lib/rake/application.rb:78:in `block in run'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/rake-10.4.2/lib/rake/application.rb:176:in `standard_exception_handling'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/rake-10.4.2/lib/rake/application.rb:75:in `run'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/rake-10.4.2/bin/rake:33:in `<top (required)>'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/bin/rake:23:in `load'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/bin/rake:23:in `<main>'
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (11.3ms)[0m  [1mDELETE FROM "contacts"[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO "contacts" ("name", "mobile_no", "department", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', '2015-01-22 23:46:21', '2015-01-22 23:46:21', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "contacts" ("name", "mobile_no", "department", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', '2015-01-22 23:46:21', '2015-01-22 23:46:21', 298486374)[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM "readings"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "readings" ("temperature", "reading", "created_at", "updated_at", "id") VALUES (1, 'thermometer', '2015-01-22 23:46:21', '2015-01-22 23:46:21', 980190962)[0m
+SQLite3::SQLException: table readings has no column named reading: INSERT INTO "readings" ("temperature", "reading", "created_at", "updated_at", "id") VALUES (1, 'thermometer', '2015-01-22 23:46:21', '2015-01-22 23:46:21', 980190962)
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "contacts"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "contacts" ("name", "mobile_no", "department", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', '2015-01-22 23:46:21', '2015-01-22 23:46:21', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "contacts" ("name", "mobile_no", "department", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', '2015-01-22 23:46:21', '2015-01-22 23:46:21', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "readings"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "readings" ("temperature", "reading", "created_at", "updated_at", "id") VALUES (1, 'thermometer', '2015-01-22 23:46:21', '2015-01-22 23:46:21', 980190962)
+SQLite3::SQLException: table readings has no column named reading: INSERT INTO "readings" ("temperature", "reading", "created_at", "updated_at", "id") VALUES (1, 'thermometer', '2015-01-22 23:46:21', '2015-01-22 23:46:21', 980190962)
+  [1m[36m (0.7ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.5ms)[0m  [1mDELETE FROM "contacts"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "contacts" ("name", "mobile_no", "department", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', '2015-01-22 23:46:21', '2015-01-22 23:46:21', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "contacts" ("name", "mobile_no", "department", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', '2015-01-22 23:46:21', '2015-01-22 23:46:21', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "readings"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "readings" ("temperature", "reading", "created_at", "updated_at", "id") VALUES (1, 'thermometer', '2015-01-22 23:46:21', '2015-01-22 23:46:21', 980190962)[0m
+SQLite3::SQLException: table readings has no column named reading: INSERT INTO "readings" ("temperature", "reading", "created_at", "updated_at", "id") VALUES (1, 'thermometer', '2015-01-22 23:46:21', '2015-01-22 23:46:21', 980190962)
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "contacts"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "contacts" ("name", "mobile_no", "department", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', '2015-01-22 23:46:22', '2015-01-22 23:46:22', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "contacts" ("name", "mobile_no", "department", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', '2015-01-22 23:46:22', '2015-01-22 23:46:22', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "readings"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "readings" ("temperature", "reading", "created_at", "updated_at", "id") VALUES (1, 'thermometer', '2015-01-22 23:46:22', '2015-01-22 23:46:22', 980190962)
+SQLite3::SQLException: table readings has no column named reading: INSERT INTO "readings" ("temperature", "reading", "created_at", "updated_at", "id") VALUES (1, 'thermometer', '2015-01-22 23:46:22', '2015-01-22 23:46:22', 980190962)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (8.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (2.6ms)[0m  DROP TABLE "activities"
+  [1m[36m (1.4ms)[0m  [1mCREATE TABLE "activities" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "trackable_id" integer, "trackable_type" varchar(255), "owner_id" integer, "owner_type" varchar(255), "key" varchar(255), "parameters" text, "recipient_id" integer, "recipient_type" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (1.9ms)[0m  [1mCREATE  INDEX "index_activities_on_owner_id_and_owner_type" ON "activities" ("owner_id", "owner_type")[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_activities_on_owner_id_and_owner_type' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_activities_on_owner_id_and_owner_type' AND type='index'
+
+  [1m[36m (1.6ms)[0m  [1mCREATE  INDEX "index_activities_on_recipient_id_and_recipient_type" ON "activities" ("recipient_id", "recipient_type")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_activities_on_recipient_id_and_recipient_type' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_activities_on_recipient_id_and_recipient_type' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_activities_on_owner_id_and_owner_type' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_activities_on_owner_id_and_owner_type' AND type='index'
+[0m
+  [1m[35m (1.6ms)[0m  CREATE  INDEX "index_activities_on_trackable_id_and_trackable_type" ON "activities" ("trackable_id", "trackable_type")
+  [1m[36m (1.7ms)[0m  [1mDROP TABLE "contacts"[0m
+  [1m[35m (1.5ms)[0m  CREATE TABLE "contacts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "mobile_no" varchar(255), "department" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (2.0ms)[0m  [1mDROP TABLE "delayed_jobs"[0m
+  [1m[35m (1.5ms)[0m  CREATE TABLE "delayed_jobs" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "priority" integer DEFAULT 0 NOT NULL, "attempts" integer DEFAULT 0 NOT NULL, "handler" text NOT NULL, "last_error" text, "run_at" datetime, "locked_at" datetime, "failed_at" datetime, "locked_by" varchar(255), "queue" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (1.2ms)[0m  [1mCREATE  INDEX "delayed_jobs_priority" ON "delayed_jobs" ("priority", "run_at")[0m
+  [1m[35m (1.8ms)[0m  DROP TABLE "readings"
+  [1m[36m (1.9ms)[0m  [1mCREATE TABLE "readings" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "temperature" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (1.8ms)[0m  DROP TABLE "readings_thermometers"
+  [1m[36m (1.3ms)[0m  [1mCREATE TABLE "readings_thermometers" ("reading_id" integer NOT NULL, "thermometer_id" integer NOT NULL) [0m
+  [1m[35m (1.6ms)[0m  DROP TABLE "roles"
+  [1m[36m (1.5ms)[0m  [1mCREATE TABLE "roles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "resource_id" integer, "resource_type" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (2.1ms)[0m  CREATE  INDEX "index_roles_on_name_and_resource_type_and_resource_id" ON "roles" ("name", "resource_type", "resource_id")
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_roles_on_name_and_resource_type_and_resource_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_roles_on_name_and_resource_type_and_resource_id' AND type='index'
+[0m
+  [1m[35m (1.4ms)[0m  CREATE  INDEX "index_roles_on_name" ON "roles" ("name")
+  [1m[36m (2.1ms)[0m  [1mDROP TABLE "termsand_conditions"[0m
+  [1m[35m (1.7ms)[0m  CREATE TABLE "termsand_conditions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (2.0ms)[0m  [1mDROP TABLE "thermometers"[0m
+  [1m[35m (1.5ms)[0m  CREATE TABLE "thermometers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime, "user_id" integer, "email" varchar(255), "max_temp" float, "update_thermo" boolean) 
+  [1m[36m (1.6ms)[0m  [1mDROP TABLE "thermometers_users"[0m
+  [1m[35m (1.4ms)[0m  CREATE TABLE "thermometers_users" ("thermometer_id" integer NOT NULL, "user_id" integer NOT NULL) 
+  [1m[36m (73.4ms)[0m  [1mDROP TABLE "users"[0m
+  [1m[35m (1.4ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255) DEFAULT '' NOT NULL, "encrypted_password" varchar(255) DEFAULT '' NOT NULL, "reset_password_token" varchar(255), "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar(255), "last_sign_in_ip" varchar(255), "created_at" datetime, "updated_at" datetime, "thermometer_id" integer, "admin" boolean, "provider" varchar(255), "uid" varchar(255), "name" varchar(255), "oauth_token" varchar(255), "oauth_expires_at" datetime) 
+  [1m[36m (1.2ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36m (1.5ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[35m (11.3ms)[0m  CREATE  INDEX "index_users_on_thermometer_id" ON "users" ("thermometer_id")
+  [1m[36m (2.2ms)[0m  [1mDROP TABLE "users_roles"[0m
+  [1m[35m (1.6ms)[0m  CREATE TABLE "users_roles" ("user_id" integer, "role_id" integer) 
+  [1m[36m (4.8ms)[0m  [1mCREATE  INDEX "index_users_roles_on_user_id_and_role_id" ON "users_roles" ("user_id", "role_id")[0m
+  [1m[35m (1.6ms)[0m  DROP TABLE "widgets"
+  [1m[36m (1.5ms)[0m  [1mCREATE TABLE "widgets" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (1.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150123001316')[0m
+  [1m[35m (1.0ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150123000950')
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Unable to load termsand_condition, underlying cause No such file to load -- termsand_condition 
+
+ /Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/activesupport-4.1.1/lib/active_support/dependencies.rb:247:in `require'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/activesupport-4.1.1/lib/active_support/dependencies.rb:247:in `block in require'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/activesupport-4.1.1/lib/active_support/dependencies.rb:232:in `load_dependency'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/activesupport-4.1.1/lib/active_support/dependencies.rb:247:in `require'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/activesupport-4.1.1/lib/active_support/dependencies.rb:348:in `require_or_load'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/activesupport-4.1.1/lib/active_support/dependencies.rb:307:in `depend_on'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/activesupport-4.1.1/lib/active_support/dependencies.rb:225:in `require_dependency'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/activerecord-4.1.1/lib/active_record/fixtures.rb:862:in `try_to_load_dependency'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/activerecord-4.1.1/lib/active_record/fixtures.rb:881:in `block in require_fixture_classes'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/activerecord-4.1.1/lib/active_record/fixtures.rb:879:in `each'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/activerecord-4.1.1/lib/active_record/fixtures.rb:879:in `require_fixture_classes'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/activerecord-4.1.1/lib/active_record/fixtures.rb:857:in `fixtures'
+/Users/adityanarayan/Desktop/RubymineProjects/Thermometer_Project/Home_Automation_Server/test/test_helper.rb:10:in `<class:TestCase>'
+/Users/adityanarayan/Desktop/RubymineProjects/Thermometer_Project/Home_Automation_Server/test/test_helper.rb:5:in `<top (required)>'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/activesupport-4.1.1/lib/active_support/dependencies.rb:247:in `require'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/activesupport-4.1.1/lib/active_support/dependencies.rb:247:in `block in require'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/activesupport-4.1.1/lib/active_support/dependencies.rb:232:in `load_dependency'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/activesupport-4.1.1/lib/active_support/dependencies.rb:247:in `require'
+/Users/adityanarayan/Desktop/RubymineProjects/Thermometer_Project/Home_Automation_Server/test/models/contact_test.rb:1:in `<top (required)>'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/activesupport-4.1.1/lib/active_support/dependencies.rb:247:in `require'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/activesupport-4.1.1/lib/active_support/dependencies.rb:247:in `block in require'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/activesupport-4.1.1/lib/active_support/dependencies.rb:232:in `load_dependency'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/activesupport-4.1.1/lib/active_support/dependencies.rb:247:in `require'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/railties-4.1.1/lib/rails/test_unit/sub_test_task.rb:114:in `block (3 levels) in define'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/railties-4.1.1/lib/rails/test_unit/sub_test_task.rb:114:in `each'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/railties-4.1.1/lib/rails/test_unit/sub_test_task.rb:114:in `block (2 levels) in define'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/railties-4.1.1/lib/rails/test_unit/sub_test_task.rb:113:in `each'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/railties-4.1.1/lib/rails/test_unit/sub_test_task.rb:113:in `block in define'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/rake-10.4.2/lib/rake/task.rb:240:in `call'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/rake-10.4.2/lib/rake/task.rb:240:in `block in execute'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/rake-10.4.2/lib/rake/task.rb:235:in `each'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/rake-10.4.2/lib/rake/task.rb:235:in `execute'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/rake-10.4.2/lib/rake/task.rb:179:in `block in invoke_with_call_chain'
+/Users/adityanarayan/.rvm/rubies/ruby-2.1.3/lib/ruby/2.1.0/monitor.rb:211:in `mon_synchronize'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/rake-10.4.2/lib/rake/task.rb:172:in `invoke_with_call_chain'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/rake-10.4.2/lib/rake/task.rb:165:in `invoke'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/rake-10.4.2/lib/rake/application.rb:150:in `invoke_task'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/rake-10.4.2/lib/rake/application.rb:106:in `block (2 levels) in top_level'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/rake-10.4.2/lib/rake/application.rb:106:in `each'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/rake-10.4.2/lib/rake/application.rb:106:in `block in top_level'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/rake-10.4.2/lib/rake/application.rb:115:in `run_with_threads'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/rake-10.4.2/lib/rake/application.rb:100:in `top_level'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/rake-10.4.2/lib/rake/application.rb:78:in `block in run'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/rake-10.4.2/lib/rake/application.rb:176:in `standard_exception_handling'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/rake-10.4.2/lib/rake/application.rb:75:in `run'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/gems/rake-10.4.2/bin/rake:33:in `<top (required)>'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/bin/rake:23:in `load'
+/Users/adityanarayan/.rvm/gems/ruby-2.1.3/bin/rake:23:in `<main>'
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "contacts"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "contacts" ("name", "mobile_no", "department", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', '2015-01-23 00:14:38', '2015-01-23 00:14:38', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "contacts" ("name", "mobile_no", "department", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', '2015-01-23 00:14:38', '2015-01-23 00:14:38', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "readings"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "readings" ("temperature", "reading", "created_at", "updated_at", "id") VALUES (1, 'thermometer', '2015-01-23 00:14:38', '2015-01-23 00:14:38', 980190962)[0m
+SQLite3::SQLException: table readings has no column named reading: INSERT INTO "readings" ("temperature", "reading", "created_at", "updated_at", "id") VALUES (1, 'thermometer', '2015-01-23 00:14:38', '2015-01-23 00:14:38', 980190962)
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "contacts"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "contacts" ("name", "mobile_no", "department", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', '2015-01-23 00:14:38', '2015-01-23 00:14:38', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "contacts" ("name", "mobile_no", "department", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', '2015-01-23 00:14:38', '2015-01-23 00:14:38', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "readings"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "readings" ("temperature", "reading", "created_at", "updated_at", "id") VALUES (1, 'thermometer', '2015-01-23 00:14:38', '2015-01-23 00:14:38', 980190962)
+SQLite3::SQLException: table readings has no column named reading: INSERT INTO "readings" ("temperature", "reading", "created_at", "updated_at", "id") VALUES (1, 'thermometer', '2015-01-23 00:14:38', '2015-01-23 00:14:38', 980190962)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.3ms)[0m  [1mDELETE FROM "contacts"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "contacts" ("name", "mobile_no", "department", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', '2015-01-23 00:14:38', '2015-01-23 00:14:38', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "contacts" ("name", "mobile_no", "department", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', '2015-01-23 00:14:38', '2015-01-23 00:14:38', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "readings"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "readings" ("temperature", "reading", "created_at", "updated_at", "id") VALUES (1, 'thermometer', '2015-01-23 00:14:38', '2015-01-23 00:14:38', 980190962)[0m
+SQLite3::SQLException: table readings has no column named reading: INSERT INTO "readings" ("temperature", "reading", "created_at", "updated_at", "id") VALUES (1, 'thermometer', '2015-01-23 00:14:38', '2015-01-23 00:14:38', 980190962)
+  [1m[35m (0.4ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM "contacts"
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "contacts" ("name", "mobile_no", "department", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', '2015-01-23 00:14:38', '2015-01-23 00:14:38', 980190962)[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "contacts" ("name", "mobile_no", "department", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', '2015-01-23 00:14:38', '2015-01-23 00:14:38', 298486374)
+  [1m[36mFixture Delete (0.1ms)[0m  [1mDELETE FROM "readings"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "readings" ("temperature", "reading", "created_at", "updated_at", "id") VALUES (1, 'thermometer', '2015-01-23 00:14:38', '2015-01-23 00:14:38', 980190962)
+SQLite3::SQLException: table readings has no column named reading: INSERT INTO "readings" ("temperature", "reading", "created_at", "updated_at", "id") VALUES (1, 'thermometer', '2015-01-23 00:14:38', '2015-01-23 00:14:38', 980190962)
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m

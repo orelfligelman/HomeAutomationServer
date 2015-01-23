@@ -1,14 +1,25 @@
 class Thermometer < ActiveRecord::Base
 	belongs_to :user
-	# validates_associated :user
+	has_many :readings
+	after_create :get_reading
+	# validates_associated :users
 	# scope :broken (where ('thermometers_updated_at < 300'))
 	# self.inheritance_column = :temperature
 
 
-	def mail_deliver
-		# @thermometer = Thermometer.find(params[:id])
-		ThermometerMailer.thermo_confirmation(self).deliver
+	def get_reading
+		uri = URI.parse('http://localhost:5000/thermometers.json')
+		thermo_response = Net::HTTP.get_response(uri)
+		check = thermo_response.body
+		j = JSON.parse(check)
 	end
+
+	def mail_deliver
+		# @thermometer_server = Thermometer.find(params[:id])
+		ThermometerMailer.delay.thermo_confirmation(self)
+	end
+
+
 
 	def self.import(file)
   spreadsheet = open_spreadsheet(file)
@@ -18,8 +29,8 @@ class Thermometer < ActiveRecord::Base
     product = find_by_id(row["id"]) || new
     product.attributes = row.to_hash.slice(*accessible_attributes)
     product.save!
-  end
-end
+  		end
+	end
 
 def self.open_spreadsheet(file)
   case File.extname(file.original_filename)

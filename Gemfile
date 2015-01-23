@@ -45,7 +45,20 @@ gem 'spring', '1.1.3',        group: :development
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
 
-gem "mail"
+gem 'mail'
 gem 'rabl'
 gem 'cancancan', '~> 1.9'
 gem 'rolify'
+gem 'whenever', :require => false
+gem 'delayed_job_active_record'
+gem 'sidekiq'
+gem 'oauth'
+gem 'omniauth-google'
+gem "omniauth-google-oauth2", "~> 0.2.1"
+gem 'bootstrap-sass', '~> 3.2.0'
+gem 'autoprefixer-rails'
+group :development, :test do
+	gem 'rspec-rails', '~> 3.0'
+	gem 'factory_girl_rails'
+end
+

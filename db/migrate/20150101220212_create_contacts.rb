@@ -4,7 +4,7 @@ class CreateContacts < ActiveRecord::Migration
       t.string :name
       t.string :mobile_no
       t.string :department
-      t.belongs_to :user, index:true
+      t.belongs_to :users, index:true
       t.timestamps
     end
   end

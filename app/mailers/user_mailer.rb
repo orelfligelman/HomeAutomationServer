@@ -1,4 +1,4 @@
-class UserMailer < ApplicationMailer
+class UserMailer < ActionMailer::Base
   default :from => "orelmfligelman@gmail.com"
 
   def registration_confirmation(user)
@@ -10,5 +10,5 @@ class UserMailer < ApplicationMailer
   def email_update_destroy (user)
   	@user = user
    mail(:to => "#{user.name} <#{user.email}>", :subject => "Thermometer Say Bye-Bye")
-  end
+	end
 end

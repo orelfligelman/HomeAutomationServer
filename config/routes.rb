@@ -1,19 +1,28 @@
 Rails.application.routes.draw do
-  get 'home/index'
-  resources :contacts
+  resources :widgets
 
-  resources :thermometers
+	root to: 'home#index'
+	devise_for :users, :controllers => { :omniauth_callbacks => 'users/omniauth_callbacks' }
+	resources :contacts
+	resources :thermometers do
+		resources :readings
+		end
       # collection { post :import }
-  devise_for :users
-
+	# get '/auth/failure', to: redirect('/')
+	# get 'signout', to: 'sessions#destroy', as: 'signout'
   resources :userview
-    get 'userview/new' => 'thermometers#new'
   resources :home
+	resources :sessions, only: [:create, :destroy]
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
-
   # You can have the root of your site routed with "root"
-  root to: 'home#index'
+
+
+	get '/bootstrap' => 'bootstrap#index'
+	devise_scope :user do
+		get '/users/sign_out' => 'sessions#destroy'
+		get '/users/sign_in' => 'sessions#create'
+	end
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

@@ -1,5 +1,5 @@
-class UserviewController < ApplicationController
-	before_filter :authenticate_user!
+class Users::UserviewController < Devise::UserviewController
+	# before_filter :authenticate_user!
 	# store :preferences, accessors: [:inline_help]
 
 
@@ -29,12 +29,12 @@ class UserviewController < ApplicationController
     @user = User.new(user_params)
     respond_to do |format|
       if @user.save
-        UserMailer.registration_confirmation(@user).deliver
-        format.html { redirect_to @user, notice: 'User was successfully created.' }
+        UserWorkers.perform_async(@user_id)
+        format.html { sign_in_and_redirect @user, notice: 'User was successfully created.' }
         format.json { render :show, status: :created, location: @user }
       else
-        format.html { render :new }
-        format.json { render json: @user.errors, status: :unprocessable_entity }
+        flash[:notice] = "Please try again"
+				redirect_to new_user_registration_url
       end
     end
   end
@@ -72,7 +72,7 @@ class UserviewController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def user_params
-      params.require(:user).permit(:name, :email)
+      params.require(:users).permit(:name, :email)
     end
 end
 

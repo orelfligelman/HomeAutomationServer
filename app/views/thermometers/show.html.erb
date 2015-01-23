@@ -1,17 +1,11 @@
 <p id="notice"><%= notice %></p>
 
-<%=puts "*" *50 %>
-<%=puts @thermometer %>
 
 <p>
   <strong>Name:</strong>
   <%= @thermometer.name %>
 </p>
 
-<p>
-  <strong>Temperature:</strong>
-  <%= @thermometer.temperature %>
-</p>
 
 
 <%= link_to 'Edit', edit_thermometer_path %> |

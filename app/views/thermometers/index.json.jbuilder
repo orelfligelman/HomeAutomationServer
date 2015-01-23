@@ -1,4 +1,4 @@
 json.array!(@thermometers) do |thermometer|
-  json.extract! thermometer, :id, :name, :temperature
+  json.extract! thermometer, :name, :temperature, :updated_at
   json.url thermometer_url(thermometer, format: :json)
 end

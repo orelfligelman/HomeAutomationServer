@@ -16,15 +16,15 @@ class ThermometersControllerTest < ActionController::TestCase
     assert_response :success
   end
 
-  test "should create thermometer" do
+  test "should create thermometer_server" do
     assert_difference('Thermometer.count') do
       post :create, thermometer: { name: @thermometer.name, temperature: @thermometer.temperature }
     end
 
-    assert_redirected_to thermometer_path(assigns(:thermometer))
+    assert_redirected_to thermometer_path(assigns(:thermometer_server))
   end
 
-  test "should show thermometer" do
+  test "should show thermometer_server" do
     get :show, id: @thermometer
     assert_response :success
   end
@@ -34,12 +34,12 @@ class ThermometersControllerTest < ActionController::TestCase
     assert_response :success
   end
 
-  test "should update thermometer" do
+  test "should update thermometer_server" do
     patch :update, id: @thermometer, thermometer: { name: @thermometer.name, temperature: @thermometer.temperature }
-    assert_redirected_to thermometer_path(assigns(:thermometer))
+    assert_redirected_to thermometer_path(assigns(:thermometer_server))
   end
 
-  test "should destroy thermometer" do
+  test "should destroy thermometer_server" do
     assert_difference('Thermometer.count', -1) do
       delete :destroy, id: @thermometer
     end

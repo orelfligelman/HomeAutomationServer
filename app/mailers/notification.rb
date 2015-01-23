@@ -1,8 +1,8 @@
 class Notification < ActionMailer::Base
    default :from => "orelmfligelman@gmail.com"
 
-  def send_update
-  	@user = user
-  	mail(:to => "#{user.name} <#{user.email)}>", :subject => "Temperature Reading Alert")
-  end
+  # def send_update
+  # 	@users = users
+  # 	mail(:to => "#{users.name}" , "#{users.email)}", :subject => "Temperature Reading Alert")
+  # end
 end
