@@ -16,13 +16,7 @@ class Reading < ActiveRecord::Base
 		# end
 	end
 
-	def max_violation?
-		@thermometer=Thermometer.last
-		if self.temperature > @thermometer.max_temp
-			puts "yes!!!" * 100
-			ThermometerMailer.thermo_max_violation(@thermometer).deliver
-		end
-	end
+
 
 	# def thermo_updated?
 	# 	if @reading.updated_at > 5.minutes.ago

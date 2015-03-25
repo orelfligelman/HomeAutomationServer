@@ -19,6 +19,13 @@ class Thermometer < ActiveRecord::Base
 		ThermometerMailer.delay.thermo_confirmation(self)
 	end
 
+	def max_violation?
+		@thermometer=Thermometer.last
+		if self.temperature > @thermometer.max_temp
+			puts "yes!!!" * 100
+			ThermometerMailer.thermo_max_violation(@thermometer).deliver
+		end
+	end
 
 
 	def self.import(file)

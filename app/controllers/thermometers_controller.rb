@@ -124,7 +124,7 @@ class ThermometersController < ApplicationController
         format.html { render :new }
         format.json { render json: @thermometer.errors, status: :unprocessable_entity }
 			end
-		end
+		endlfjhaefj
   end
 
   # PATCH/PUT /thermometers/1

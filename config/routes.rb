@@ -10,19 +10,19 @@ Rails.application.routes.draw do
       # collection { post :import }
 	# get '/auth/failure', to: redirect('/')
 	# get 'signout', to: 'sessions#destroy', as: 'signout'
-  resources :userview
+	# resources :userview
   resources :home
-	resources :sessions, only: [:create, :destroy]
+	# resources :sessions, only: [:create, :destroy]
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
   # You can have the root of your site routed with "root"
 
 
 	get '/bootstrap' => 'bootstrap#index'
-	devise_scope :user do
-		get '/users/sign_out' => 'sessions#destroy'
-		get '/users/sign_in' => 'sessions#create'
-	end
+	# devise_scope :user do
+	# 	get '/users/sign_out' => 'sessions#destroy'
+	# 	# get '/users/sign_in' => 'sessions#create'
+	# end
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

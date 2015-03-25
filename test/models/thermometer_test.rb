@@ -21,17 +21,19 @@ class ThermometerTest < ActiveSupport::TestCase
 		assert_not_empty thermometer.temperature , "thermometer did not produce a reading"
 	end
 
-	# test "should email user when new thermometer is created" do
-	#
-	# end
 
-	# test "should be viewable by only a specific user" do
-	#
-	# end
-	#
-	# 	test "should email a user if a thermometer goes over maximum temperature set by user" do
-			#   assert true
-  # end
+
+# test "should email user when new thermometer is created" do
+#
+# end
+
+# test "should be viewable by only a specific user" do
+#
+# end
+#
+# 	test "should email a user if a thermometer goes over maximum temperature set by user" do
+#   assert true
+# end
 end
 
 
